@@ -51,7 +51,7 @@ class ModelTrainer:
                 #     'C': [1, 10, 100],
                 #     'kernel': ['linear', 'rbf'],
                 #     'gamma': ['scale', 'auto']
-                # },
+                # }, 
             }
 
             model_report: dict = evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
@@ -62,6 +62,7 @@ class ModelTrainer:
                 list(model_report.values()).index(best_model_score)
             ]
             best_model = models[best_model_name]
+            
 
             if best_model_score < 0.6:
                 raise CustomException("No best model found", error_detail=sys.exc_info()[1] if sys.exc_info()[1] is not None else None)
