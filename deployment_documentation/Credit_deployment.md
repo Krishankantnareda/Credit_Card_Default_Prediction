@@ -12,7 +12,7 @@ To deploy our project to Aws Ec2 we have some steps which are following:
 
 # ![Docker](https://skillicons.dev/icons?i=docker) Create DockerFile and test by building docker image locally.
 
-- Let's check our DockerFile that we've created for our project.
+- Let's check my DockerFile that i've created for our project.
 
 ```docker
 FROM python:3.8-slim-buster
