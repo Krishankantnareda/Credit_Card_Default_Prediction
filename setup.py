@@ -18,7 +18,7 @@ def get_requirements(file_path: str) -> List[str]:
 
 setup(
     name='Credit_Card_Default_Prediction',
-    version='0.0.2',
+    version='0.0.3',
     author='Krishan Kant Sharma',
     author_email='naredakrishankant@gmail.com',
     install_requires=get_requirements('requirements.txt'),
